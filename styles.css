@@ -1,0 +1,68 @@
+/* Global Styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Welcome Banner*/
+.welcome-content {
+  background-color: #c65a23;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 70px;
+}
+body {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: Impact, sans-serif, Helvetica;*/
+}
+
+
+/* Header and Footer
+-------------------------*/
+footer {
+  background: #c65a23;
+  /*color: white;*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-weight: 100;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  background-color: #ffc266;
+  /*color: white;*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  width: 40;
+
+}
+ul {
+  list-style-type: none;
+}
+
+
+/* Header and Footer
+-------------------------*/
+.registration{
+  color: black;
+}
+
+
+footer {
+  background: #c65a23;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+/* How to add columns to your blocks of content and add a line be*/
+/*#multi_col{
+  column-count: 3;
+  column-rule: 2px solid #000;
+}*/

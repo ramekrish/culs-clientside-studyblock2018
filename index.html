@@ -1,0 +1,54 @@
+<!-- Beans, DAOs, Servlet, and one more thing?-->
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title> Welcome to My Webpage | Test </title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <!--Welcome Banner -->
+    <header role="banner" class="welcome-content">
+      <h1> Welcome to My Webpage </h1>
+    </header>
+
+    <main role="main" id="multi_col">
+      <nav role="navigation">
+         <ul>
+           <li>Home</li>
+           <li>Blogs</li>
+           <li>Videos</li>
+           <li>About Me</li>
+         </ul>
+      </nav>
+
+      <section class="registration">
+        <form action="/script.java" method="get">
+          Name:              <input type="text" name="name"><br>
+          Date of Birth:     <input type="date" name="birthdate"><br>
+          <!-- Country needs to be a keygen or datalist -->
+          <!-- Country:           <input type="text" name="country"> -->
+          Countries: <input list="countries" name="country">
+          <datalist id="countries">
+            <option value="United States">
+            <option value="India">
+            <option value="United Kingdom">
+            <option value="Australia">
+            <option value="France">
+          </datalist><br>
+
+          Phone Number:      <input type="tel" name="phone_number"><br>
+          Email Id:          <input type="email" name="email"><br>
+          Website:           <input type="url" name="country"><br>
+          <input type="submit" value"Submit">
+        </form>
+      </section>
+    </<main>
+
+    <footer>
+      <p>Copyright @ TCS 2016</p>
+    </footer>
+  </body>
+</html>
