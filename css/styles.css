@@ -10,11 +10,18 @@ html {
 
 /*Welcome Banner*/
 .welcome-content {
-  background-color: #c65a23;
+  position: absolute;
+  top: 100;
+  background-color: gray;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  padding: 30px 70px;
+  padding: 1rem 5rem;
+  padding-top: 10px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
 }
 body {
   color: white;
@@ -22,40 +29,59 @@ body {
   /*font-family: Impact, sans-serif, Helvetica;*/
 }
 
-
-/* Header and Footer
--------------------------*/
-footer {
-  background: #c65a23;
-  /*color: white;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-weight: 100;
+h2 {
+  text-align: center;
 }
 
 
 /* Navigation
 -------------------------*/
-nav {
-  background-color: #ffc266;
-  /*color: white;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  width: 40;
 
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0.2rem, 0rem;
+      overflow: hidden;
+      border: 5px solid #e7e7e7;
+      background-color: #f3f3f3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
 }
-ul {
-  list-style-type: none;
+
+li {
+    float: left;
 }
+
+li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+li a.active {
+    color: black;
+    background-color: gray;
+}
+
 
 
 /* Header and Footer
 -------------------------*/
-.registration{
-  color: black;
-}
-
 
 footer {
-  background: #c65a23;
+  position: fixed;
+  bottom: 0px;
+  padding: 0.2rem 3rem;
+  background: gray;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
