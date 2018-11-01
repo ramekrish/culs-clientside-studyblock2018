@@ -1,28 +1,13 @@
 /* Global Styles
 -------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
-html {
+html *{
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*Welcome Banner*/
-.welcome-content {
-  position: absolute;
-  top: 100;
-  background-color: gray;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 1rem 5rem;
-  padding-top: 10px;
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
-}
 body {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -33,49 +18,19 @@ h2 {
   text-align: center;
 }
 
-
-/* Navigation
--------------------------*/
-
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0.2rem, 0rem;
-      overflow: hidden;
-      border: 5px solid #e7e7e7;
-      background-color: #f3f3f3;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: gray;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: lightgray;
-}
-
-li a.active {
-    color: black;
-    background-color: gray;
-}
-
-
-
 /* Header and Footer
 -------------------------*/
+header {
+  position: top;
+  top: 0px;
+  background-color: gray;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 1rem 5rem;
+  width: 100%;
+  margin: 0;
+}
 
 footer {
   position: fixed;
@@ -87,8 +42,39 @@ footer {
   font-weight: 100;
 }
 
-/* How to add columns to your blocks of content and add a line be*/
-/*#multi_col{
-  column-count: 3;
-  column-rule: 2px solid #000;
-}*/
+/* Navigation
+-------------------------*/
+.navigation {
+    position: center;
+    overflow: hidden;
+    background-color: #333;
+    position: absolute; /* Set the navbar to fixed position */
+    top: 50; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.navigation a.hover {
+    color: black;
+    background-color: gray;
+}
+
+
+/* Main content */
+.main {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+    font-size: 30px;
+    color: black;
+}
