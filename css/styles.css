@@ -14,9 +14,7 @@ body {
   /*font-family: Impact, sans-serif, Helvetica;*/
 }
 
-h2 {
-  text-align: center;
-}
+
 
 /* Header and Footer
 -------------------------*/
@@ -66,15 +64,37 @@ footer {
     background-color: lightgray;
 }
 
+.active {
+  background-color: black;
+}
+
 .navigation a.hover {
     color: black;
-    background-color: gray;
+    background-color: black;
 }
 
 
 /* Main content */
 .main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
-    font-size: 30px;
+    font-size: 20px;
     color: black;
+}
+
+.main-about {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    font-size: 20px;
+    color: black;
+    display: flex;
+}
+
+.h234 {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px
+}
+
+.main-about > div {
+  flex: 1;
 }
